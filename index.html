@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SterlingStone Realty Limited</title>
+  <link rel="icon" href="Sterlingstonelogo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo-container logo-link" role="button" aria-label="Home">
+        <img src="Sterlingstonelogo.png" alt="SterlingStone Realty Logo" class="logo-img">
+        <h1 class="logo-text">Sterling Stone Realty</h1>
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="currentColor">
+          <path d="M4 7h22M4 15h22M4 23h22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav id="mainNav">
+        <a href="#about">About</a>
+        <a href="#properties">Properties</a>
+        <a href="#services">Services</a>
+        <a href="#enquiry" class="btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <!-- Background slideshow inside hero -->
+    <div class="hero-bg">
+      <video autoplay muted loop class="hero-media">
+        <source src="ss.mp4" type="video/mp4">
+      </video>
+      
+      <img src="photo_1_2025-12-20_23-07-24.jpg" class="hero-media" alt="Luxury Property">
+      <img src="photo_2_2025-12-20_23-07-24.jpg" class="hero-media" alt="Luxury Property">
+    </div>
+
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>It's Time To Find Your Luxury Home</h1>
+        <a href="#properties" class="hero-btn">Explore our Properties</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <h3>Where Prestige Meets Perfection</h3>
+    </div>
+  </section>
+
+  <!-- FEATURED PROPERTIES SECTION -->
+  <section id="properties" class="featured-properties">
+    <div class="properties-container">
+      <h2>Featured Properties</h2>
+      
+      <div class="properties-carousel-wrapper">
+        <!-- Left Arrow -->
+        <button class="property-arrow left" id="prevProperty" aria-label="Previous property">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/>
+          </svg>
+        </button>
+
+        <!-- Properties Carousel -->
+        <div class="properties-carousel">
+          <!-- Property Card 1 - Unique Residence -->
+          <div class="property-card-featured">
+            <div class="property-image">
+              <img src="orange-island-5.jpg" alt="Unique Residence">
+              <div class="property-overlay">
+                <a href="uniqueresidence.html" class="view-details-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="property-info">
+              <h3>Unique Residence</h3>
+              <p>Experience luxury living at The Unique Residence with modern amenities and prime location...</p>
+            </div>
+          </div>
+
+          <!-- Property Card 2 - Mews Medina -->
+          <div class="property-card-featured blurred">
+            <span class="coming-soon-badge">Coming Soon</span>
+            <div class="property-image">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Mews Medina">
+              <div class="property-overlay">
+                <div class="view-details-btn" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="property-info">
+              <h3>Mews Medina</h3>
+              <p>Our Property Mews Medina Project Description Mews Medina Project Features 24 Hour Power Supply...</p>
+            </div>
+          </div>
+
+          <!-- Property Card 3 - Modern Luxury Residence -->
+          <div class="property-card-featured blurred">
+            <span class="coming-soon-badge">Coming Soon</span>
+            <div class="property-image">
+              <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800" alt="Luxury Residence">
+              <div class="property-overlay">
+                <div class="view-details-btn" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="property-info">
+              <h3>Modern Luxury Residence</h3>
+              <p>Contemporary design meets sophisticated living in this exclusive development...</p>
+            </div>
+          </div>
+
+          <!-- Property Card 4 - Executive Estate -->
+          <div class="property-card-featured blurred">
+            <span class="coming-soon-badge">Coming Soon</span>
+            <div class="property-image">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800" alt="Executive Estate">
+              <div class="property-overlay">
+                <div class="view-details-btn" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="property-info">
+              <h3>Executive Estate</h3>
+              <p>Premium estate development offering unparalleled luxury and comfort...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Arrow -->
+        <button class="property-arrow right" id="nextProperty" aria-label="Next property">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Carousel Dots -->
+      <div class="carousel-dots" id="propertyDots"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services-luxury">
+    <div class="services-wrapper">
+      <!-- LEFT IMAGE -->
+      <div class="services-image">
+        <img id="serviceImage" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Residential Development">
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="services-content">
+        <span class="services-label">OUR SERVICES</span>
+        <hr>
+        <h2 id="serviceTitle">Residential Development</h2>
+        <p id="serviceText1">We specialize in high-quality residential developments designed for luxury living and long-term value.</p>
+        <p id="serviceText2">From bespoke private residences to large-scale developments, we deliver exceptional quality and architectural excellence.</p>
+        <a href="#" class="services-btn">Learn More</a>
+      </div>
+
+      <!-- ARROWS -->
+      <button class="service-arrow left" id="prevService" aria-label="Previous service">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/>
+        </svg>
+      </button>
+
+      <button class="service-arrow right" id="nextService" aria-label="Next service">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- VALUES SECTION -->
+  <section id="values" class="values-luxury">
+    <div class="values-container">
+      <span class="values-label">OUR CORE VALUES</span>
+      <h2 class="values-title">C.P.E</h2>
+
+      <div class="values-grid">
+        <!-- COMMITMENT -->
+        <div class="value-item">
+          <div class="value-icon">
+            <img src="1.png" alt="Commitment icon">
+          </div>
+          <h3>Commitment</h3>
+          <p>
+            Our dedication to every project goes beyond the expected. We invest time, energy, and expertise to ensure that every outcome reflects our unwavering promise to quality
+          </p>
+        </div>
+
+        <!-- PRECISION -->
+        <div class="value-item">
+          <div class="value-icon">
+            <img src="2.png" alt="Precision icon">
+          </div>
+          <h3>Precision</h3>
+          <p>
+            Every detail matters. From concept to completion, we ensure meticulous attention to every element, leaving nothing to chance.
+          </p>
+        </div>
+
+        <!-- EXCELLENCE -->
+        <div class="value-item">
+          <div class="value-icon">
+            <img src="3.png" alt="Excellence icon">
+          </div>
+          <h3>Excellence</h3>
+          <p>
+            Exceeding expectations is what we stand for. We set new standards and beat all records for the satisfaction of our clients.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CEO SECTION -->
+  <!-- CO-OWNERS SECTION - Replace the CEO section -->
+<section id="ceo" class="co-owners-section">
+  <div class="co-owners-container">
+    
+    <!-- Section Header -->
+    <div class="co-owners-header">
+      <h2>Meet Our Leadership Team</h2>
+      <p>Excellence and Diligence Drive Everything We Do</p>
+    </div>
+
+    <!-- Co-Owners Grid -->
+    <div class="co-owners-grid">
+      
+      <!-- Co-Owner 1: Kamar Kolawole Bada -->
+      <div class="co-owner-card">
+        <div class="co-owner-image">
+          <img src="K. Bada .jpg" alt="Kamar Kolawole Bada">
+        </div>
+        <div class="co-owner-info">
+          <h3>Engr. Kamar Kolawole Bada</h3>
+          <p class="co-owner-title">Co-Founder & Director</p>
+          <p class="co-owner-bio">
+            Leading with vision and passion, Kamar drives SterlingStone's commitment to creating unforgettable luxury real estate experiences that redefine excellence.
+          </p>
+        </div>
+      </div>
+
+      <!-- Co-Owner 2: Jaiyesimi Yomi -->
+      <div class="co-owner-card">
+        <div class="co-owner-image">
+          <img src="Jaiyesomiyomi-removebg-preview.png" alt="Jaiyesimi Yomi">
+        </div>
+        <div class="co-owner-info">
+          <h3>Engr. Jaiyesimi Yomi</h3>
+          <p class="co-owner-title">Co-Founder & Director</p>
+          <p class="co-owner-bio">
+            With strategic insight and dedication to quality, Jaiyesimi ensures every project exceeds expectations and delivers lasting value to our clients.
+          </p>
+        </div>
+      </div>
+
+      <!-- Co-Owner 3: Kamal Adeola -->
+      <div class="co-owner-card">
+        <div class="co-owner-image">
+          <img src="Kamal Adeola.jpg" alt="Kamal Adeola">
+        </div>
+        <div class="co-owner-info">
+          <h3>Kamal Adeola Adeniran</h3>
+          <p class="co-owner-title">Co-Founder & Director</p>
+          <p class="co-owner-bio">
+            Bringing innovation and precision to every development, Kamal's expertise shapes SterlingStone's reputation for unparalleled craftsmanship.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Optional: Company Message -->
+    <div class="leadership-message">
+      <p>
+        "Many ask why we chose to enter the world of luxury real estate. The answer is straightforward: we love crafting experiences that leave a lasting impression. This passion is what inspired the creation of SterlingStone, and it's what fuels our commitment to push boundaries and redefine excellence with every project we undertake."
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ENQUIRY SECTION -->
+  <section id="enquiry" class="enquiry-section">
+  <div class="enquiry-wrapper">
+    
+    <div class="enquiry-image">
+      <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800" alt="Luxury Property">
+    </div>
+
+    <div class="enquiry-form-container">
+      <h2>Make an Enquiry</h2>
+      
+      <form class="enquiry-form" id="enquiryForm" action="https://formspree.io/f/mpqabzeb" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">Name <span class="required">*</span></label>
+            <input type="text" id="firstName" name="firstName" placeholder="First" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName" class="sr-only">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone <span class="required">*</span></label>
+            <div class="phone-input">
+              <select class="country-code" name="countryCode">
+                <option value="+234">🇳🇬 +234</option>
+                <option value="+1">🇺🇸 +1</option>
+                <option value="+44">🇬🇧 +44</option>
+              </select>
+              <input type="tel" id="phone" name="phone" placeholder="0802 123 4567" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="organization">Business / Organization <span class="required">*</span></label>
+          <input type="text" id="organization" name="organization" required>
+        </div>
+
+        <div class="form-group">
+          <label for="request">Request <span class="required">*</span></label>
+          <textarea id="request" name="request" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="footer-luxury">
+    <div class="footer-container">
+      
+      <!-- LEFT: Logo & Social -->
+      <div class="footer-column footer-brand">
+        <div class="footer-logo">
+          <img src="Sterlingstonelogo.png" alt="SterlingStone Realty Logo">
+          <h3>SterlingStone Realty</h3>
+        </div>
+        <p class="footer-tagline">Real Estate Development Company</p>
+        
+        <div class="footer-social">
+          <h4>We're in Social:</h4>
+          <div class="social-icons">
+            <!-- Facebook -->
+            <a aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <!-- Twitter -->
+            <a aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.953 4.57a10 10 0 002.856-9.29 11.998 11.998 0 01-3.406 1.313c-1.53-1.633-3.72-2.65-6.125-2.65-4.767 0-8.632 3.865-8.632 8.632 0 .678.086 1.338.253 1.972C7.685 8.946 4.066 6.86 1.64 3.79a8.628 8.628 0 001.33 10.873 8.606 8.606 0 01-3.913-1.082v.108c0 4.183 2.968 7.664 6.905 8.466a8.607 8.607 0 01-3.898.163 8.632 8.632 0 008.05 5.991 17.287 17.287 0 01-10.685 3.689 24.406 24.406 0 013.514.202c10.877 6.886 26.645 3.869 33.531-7.008 3.332-5.027 5.461-12.387 5.461-19.807 0-.339-.012-.678-.037-1.017 3.694-2.675 6.899-6.71 8.949-11.025z"/>
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="2.17" y="2.17" width="19.66" height="19.66" rx="4.58" ry="4.58" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12 8.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5-3a1 1 0 11-2 0 1 1 0 012 0z"/>
+                <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="17" cy="7" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.016-8.895 0-9.814h3.554v1.391c-.009.015-.021.029-.033.042h.033v-.042c.431-.666 1.199-1.616 2.922-1.616 2.135 0 3.731 1.395 3.731 4.397v5.641zM5.337 8.855c-1.144 0-1.915-.762-1.915-1.715 0-.955.771-1.715 1.958-1.715 1.187 0 1.917.76 1.933 1.715 0 .953-.746 1.715-1.933 1.715zm1.581 11.597H3.635V9.638h3.283v10.814zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MIDDLE: Useful Links -->
+      <div class="footer-column">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#properties">Properties</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#values">Our Values</a></li>
+          <li><a href="#enquiry">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- RIGHT: Get in Touch -->
+      <div class="footer-column">
+        <h4>Get in Touch</h4>
+        <ul class="contact-info">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>SterlingStone Realty Limited</strong><br>
+              Lagos,<br>
+              Nigeria
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <span>0802 966 5306 | 0803 345 5934</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:realtysterlingstone@gmail.com">realtysterlingstone@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p>© 2025 SterlingStone Realty Limited. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="main.js"></script>
+</body>
+</html>
