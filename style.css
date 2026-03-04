@@ -2839,3 +2839,18 @@ textarea {
     gap: 2rem;
   }
 }
+.floorplan-image {
+  margin: 20px 0 25px 0;
+  text-align: center;
+}
+
+.floorplan-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.property-card-featured img {
+  width: 100%;
+  height: auto;
+}
